@@ -195,9 +195,21 @@
 <p>上传到github</p>
 <p>ssh key要配置好。</p>
 <p>其次，配置_config.yml中有关deploy的部分（可在官网搜索下载：SublimeTextv4.0.4092）拖拽cd /f/Workspaces/hexo/到SublimeText，打开_config.yml 到最下方进行以下列出内容修改</p>
-<p>正确写法（每行缩进两个字符，冒号后边有一个空格）：<br>deploy:<br>  type: git<br>  repository: 你的用户名:liuxianan/liuxianan.github.io.git<br>  branch: master</p>
+<p>正确写法（每行缩进两个字符，冒号后边有一个空格）：<br>deploy:<br>  type: git<br>  repository: <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:你的用户名/你的用户名.github.io.git<br>  branch: master</p>
 <p>安装一个插件：<br>npm install hexo-deployer-git –save</p>
 <p>$ hexo d</p>
+<p>写博客</p>
+<p>首先cd /f/Workspaces/hexo/，执行命令：<br>hexo new ‘名字’</p>
+<p>打开source-_posts<br>一般完整格式如下：</p>
+<hr>
+<p>title: postName #文章页面上的显示名称，一般是中文<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories: 默认分类 #分类<br>tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格<br>description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</p>
+<hr>
+<p>以下是正文</p>
+<p>$ hexo d -g</p>
+<h2 id="如果觉得默认主题不好看，可以换一个主题（个人觉得还是好看的）"><a href="#如果觉得默认主题不好看，可以换一个主题（个人觉得还是好看的）" class="headerlink" title="如果觉得默认主题不好看，可以换一个主题（个人觉得还是好看的）"></a>如果觉得默认主题不好看，可以换一个主题（个人觉得还是好看的）</h2><p>推荐2个主题：hexo-theme-jekyll 和 hexo-theme-yilia。</p>
+<p>首先下载这个主题：<br>$ cd /f/Workspaces/hexo/<br>$ git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+<p>接着修改_config.yml中的theme: landscape改为theme: yilia，然后重新执行hexo g来重新生成。</p>
+<p>如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布。</p>
 
       
 
